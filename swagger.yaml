@@ -1,0 +1,45 @@
+swagger: '2.0'
+info:
+  title: Example Api
+  version: "1.0.0"
+
+produces:
+  - application/json
+
+paths:
+  /example:
+    post:
+      parameters:
+        - in: body
+          name: body
+          required: true
+          schema:
+            $ref: "#/definitions/Example"
+      responses:
+        201:
+          description: Example created successfully
+          schema:
+            $ref: "#/definitions/Example"
+        400:
+          description: Invalid example supplied
+          schema:
+            type: object
+            properties: {}
+
+definitions:
+  Example:
+    required:
+      - name
+      - age
+      - gender
+    properties:
+      name:
+        type: string
+      age:
+        type: integer
+      gender:
+        type: string
+        enum:
+          - none
+          - male
+          - female

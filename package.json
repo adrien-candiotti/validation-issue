@@ -1,0 +1,25 @@
+{
+  "name": "validation-issue",
+  "version": "1.0.0",
+  "description": "An example to illustrate swagger-tools issue",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.13.3",
+    "swagger-tools": "^0.9.5",
+    "js-yaml": "^3.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrien-candiotti/validation-issue.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adrien-candiotti/validation-issue/issues"
+  },
+  "homepage": "https://github.com/adrien-candiotti/validation-issue#readme"
+}
